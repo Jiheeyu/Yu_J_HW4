@@ -1,1 +1,158 @@
-@charset "UTF-8"
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #c6efff;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#mainHeader {
+	width: 955px;
+	height: 389px;
+	background-image: url("../images/header_banner.jpg")
+}
+
+#mainFooter 
+{
+	width: 955px;
+	height: 306px;
+	background-image: url("../images/footer_banner.jpg")
+}
+
+
+
+/*content page goes here*/
+
+h2 {
+	font-weight: normal;
+	font-size: 28px;
+	text-align: center;
+	color: white;
+}
+
+#throughout h2 {
+	margin-top: 70px; 
+}
+
+#content .white {
+	margin: 0 10px 0 0;
+}
+
+#content img {
+	text-align: center;
+	margin: 30px 0;
+}
+
+
+p {	
+	font-size: 18px;
+	color: #fff;
+	text-align: justify;
+	margin: 0;
+}
+
+#content {
+	margin:30px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 920px;
+	height: 2700px;
+	background-color:#00696d;
+}
+
+#throughout {
+	width: 865px;
+	height: 1270px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.firstbox {
+	width: 548px;
+	height: 750px;
+}
+
+#asians {
+	width: 865px;
+	height: 650px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#womenAndmen {
+	width: 865px;
+	height: 750px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Box {
+	width: 420px;
+	height: 350px;
+}
+
+/*close content*/

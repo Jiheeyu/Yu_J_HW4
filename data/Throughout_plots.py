@@ -37,13 +37,20 @@ print(len(KOR), "Korea won medals")
 print(len(CHN), "China won medals")
 print(len(JPN), "Japan won medals")
 
+x = [0, 2, 4, 6, 8, 10, 12]
+Gold = [5, 8, 6, 5, 14, 6, 7]
+Silver = [0, 1, 4, 2, 3, 10, 5]
+Bronze = [1, 1, 2, 0, 2, 2, 2]
+labels = [1992, 1994, 1998, 2002, 2006, 2010, 2014]
 
-# Data
-df=pd.DataFrame({'x': range(1,11), 'y1': np.random.randn(10), 'y2': np.random.randn(10)+range(1,11), 'y3': np.random.randn(10)+range(11,21) })
- 
-# multiple line plot
-plt.plot( 'x', 'y1', data=df, marker='o', markerfacecolor='blue', markersize=12, color='skyblue', linewidth=4)
-plt.plot( 'x', 'y2', data=df, marker='', color='olive', linewidth=2)
-plt.plot( 'x', 'y3', data=df, marker='', color='olive', linewidth=2, linestyle='dashed', label="toto")
+
+plt.plot(x, Gold, color="#fea63e", label='Gold')
+plt.plot(x, Silver, color="#867e74", label='Silver')
+plt.plot(x, Bronze, color="#803e2d", label='Bronze')
+plt.xticks(x, labels, rotation="horizontal")
+plt.subplots_adjust(bottom=0.15)
+plt.title("Medals Count Of Korea Throughout The Years")
+plt.ylabel("Medal Counts Since 1992")
+plt.xlabel("Year")
 plt.legend()
-
+plt.show()
