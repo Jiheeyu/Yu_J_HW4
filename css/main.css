@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-
-
-/*basic reset*/
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
 div,body,header,footer,section,article,nav 
 { 
@@ -30,21 +21,6 @@ body
 	font-size: 12px;
 	color: #333;
 	background-color: #c6efff;
-}
-
-
-/*a:link is for not visited(standard unclicked link), 
-a:visited is for visited, and just a applies to both.*/
-/*a will also style anchor links*/
-
-a:link, a:visited 
-{ 
- 	text-decoration:none; 	
-}
-
-a:hover, a:active 
-{ 
-	text-decoration:none; 
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -80,7 +56,7 @@ a:hover, a:active
 
 
 
-/*content page goes here*/
+/*open content page goes here*/
 
 h2 {
 	font-weight: normal;
